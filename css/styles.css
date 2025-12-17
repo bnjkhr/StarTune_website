@@ -104,6 +104,32 @@ a {
     opacity: 0.8;
 }
 
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    color: var(--gray-400);
+}
+
+.lang-switcher a {
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: var(--gray-400);
+    transition: color 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.lang-switcher a:hover {
+    color: var(--gray-600);
+}
+
+.lang-switcher a.active {
+    color: var(--gray-900);
+    background: var(--gray-100);
+    font-weight: 500;
+}
+
 /* ==========================================================================
    Hero
    ========================================================================== */
